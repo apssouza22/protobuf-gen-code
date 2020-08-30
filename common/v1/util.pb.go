@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.25.0
 // 	protoc        v3.12.0
-// source: common/v1/util.proto
+// source: apssouza/common/v1/util.proto
 
 package commonv1
 
@@ -40,7 +40,7 @@ type CommonError struct {
 func (x *CommonError) Reset() {
 	*x = CommonError{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_common_v1_util_proto_msgTypes[0]
+		mi := &file_apssouza_common_v1_util_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -53,7 +53,7 @@ func (x *CommonError) String() string {
 func (*CommonError) ProtoMessage() {}
 
 func (x *CommonError) ProtoReflect() protoreflect.Message {
-	mi := &file_common_v1_util_proto_msgTypes[0]
+	mi := &file_apssouza_common_v1_util_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -66,7 +66,7 @@ func (x *CommonError) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CommonError.ProtoReflect.Descriptor instead.
 func (*CommonError) Descriptor() ([]byte, []int) {
-	return file_common_v1_util_proto_rawDescGZIP(), []int{0}
+	return file_apssouza_common_v1_util_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *CommonError) GetCode() int32 {
@@ -83,39 +83,40 @@ func (x *CommonError) GetMsg() string {
 	return ""
 }
 
-var File_common_v1_util_proto protoreflect.FileDescriptor
+var File_apssouza_common_v1_util_proto protoreflect.FileDescriptor
 
-var file_common_v1_util_proto_rawDesc = []byte{
-	0x0a, 0x14, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2f, 0x76, 0x31, 0x2f, 0x75, 0x74, 0x69, 0x6c,
-	0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x09, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2e, 0x76,
-	0x31, 0x22, 0x33, 0x0a, 0x0b, 0x43, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x45, 0x72, 0x72, 0x6f, 0x72,
-	0x12, 0x12, 0x0a, 0x04, 0x63, 0x6f, 0x64, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x04,
-	0x63, 0x6f, 0x64, 0x65, 0x12, 0x10, 0x0a, 0x03, 0x6d, 0x73, 0x67, 0x18, 0x02, 0x20, 0x01, 0x28,
-	0x09, 0x52, 0x03, 0x6d, 0x73, 0x67, 0x42, 0x45, 0x0a, 0x20, 0x63, 0x6f, 0x6d, 0x2e, 0x61, 0x70,
-	0x73, 0x73, 0x6f, 0x75, 0x7a, 0x61, 0x2e, 0x62, 0x6f, 0x6f, 0x6b, 0x73, 0x74, 0x6f, 0x72, 0x65,
-	0x2e, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2e, 0x76, 0x31, 0x42, 0x0b, 0x43, 0x6f, 0x6d, 0x6d,
-	0x6f, 0x6e, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a, 0x12, 0x63, 0x6f, 0x6d, 0x6d, 0x6f,
-	0x6e, 0x2f, 0x76, 0x31, 0x3b, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x76, 0x31, 0x62, 0x06, 0x70,
-	0x72, 0x6f, 0x74, 0x6f, 0x33,
+var file_apssouza_common_v1_util_proto_rawDesc = []byte{
+	0x0a, 0x1d, 0x61, 0x70, 0x73, 0x73, 0x6f, 0x75, 0x7a, 0x61, 0x2f, 0x63, 0x6f, 0x6d, 0x6d, 0x6f,
+	0x6e, 0x2f, 0x76, 0x31, 0x2f, 0x75, 0x74, 0x69, 0x6c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12,
+	0x12, 0x61, 0x70, 0x73, 0x73, 0x6f, 0x75, 0x7a, 0x61, 0x2e, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e,
+	0x2e, 0x76, 0x31, 0x22, 0x33, 0x0a, 0x0b, 0x43, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x45, 0x72, 0x72,
+	0x6f, 0x72, 0x12, 0x12, 0x0a, 0x04, 0x63, 0x6f, 0x64, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05,
+	0x52, 0x04, 0x63, 0x6f, 0x64, 0x65, 0x12, 0x10, 0x0a, 0x03, 0x6d, 0x73, 0x67, 0x18, 0x02, 0x20,
+	0x01, 0x28, 0x09, 0x52, 0x03, 0x6d, 0x73, 0x67, 0x42, 0x45, 0x0a, 0x20, 0x63, 0x6f, 0x6d, 0x2e,
+	0x61, 0x70, 0x73, 0x73, 0x6f, 0x75, 0x7a, 0x61, 0x2e, 0x62, 0x6f, 0x6f, 0x6b, 0x73, 0x74, 0x6f,
+	0x72, 0x65, 0x2e, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2e, 0x76, 0x31, 0x42, 0x0b, 0x43, 0x6f,
+	0x6d, 0x6d, 0x6f, 0x6e, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a, 0x12, 0x63, 0x6f, 0x6d,
+	0x6d, 0x6f, 0x6e, 0x2f, 0x76, 0x31, 0x3b, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x76, 0x31, 0x62,
+	0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
-	file_common_v1_util_proto_rawDescOnce sync.Once
-	file_common_v1_util_proto_rawDescData = file_common_v1_util_proto_rawDesc
+	file_apssouza_common_v1_util_proto_rawDescOnce sync.Once
+	file_apssouza_common_v1_util_proto_rawDescData = file_apssouza_common_v1_util_proto_rawDesc
 )
 
-func file_common_v1_util_proto_rawDescGZIP() []byte {
-	file_common_v1_util_proto_rawDescOnce.Do(func() {
-		file_common_v1_util_proto_rawDescData = protoimpl.X.CompressGZIP(file_common_v1_util_proto_rawDescData)
+func file_apssouza_common_v1_util_proto_rawDescGZIP() []byte {
+	file_apssouza_common_v1_util_proto_rawDescOnce.Do(func() {
+		file_apssouza_common_v1_util_proto_rawDescData = protoimpl.X.CompressGZIP(file_apssouza_common_v1_util_proto_rawDescData)
 	})
-	return file_common_v1_util_proto_rawDescData
+	return file_apssouza_common_v1_util_proto_rawDescData
 }
 
-var file_common_v1_util_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_common_v1_util_proto_goTypes = []interface{}{
-	(*CommonError)(nil), // 0: common.v1.CommonError
+var file_apssouza_common_v1_util_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_apssouza_common_v1_util_proto_goTypes = []interface{}{
+	(*CommonError)(nil), // 0: apssouza.common.v1.CommonError
 }
-var file_common_v1_util_proto_depIdxs = []int32{
+var file_apssouza_common_v1_util_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -123,13 +124,13 @@ var file_common_v1_util_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_common_v1_util_proto_init() }
-func file_common_v1_util_proto_init() {
-	if File_common_v1_util_proto != nil {
+func init() { file_apssouza_common_v1_util_proto_init() }
+func file_apssouza_common_v1_util_proto_init() {
+	if File_apssouza_common_v1_util_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_common_v1_util_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_apssouza_common_v1_util_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CommonError); i {
 			case 0:
 				return &v.state
@@ -146,18 +147,18 @@ func file_common_v1_util_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_common_v1_util_proto_rawDesc,
+			RawDescriptor: file_apssouza_common_v1_util_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_common_v1_util_proto_goTypes,
-		DependencyIndexes: file_common_v1_util_proto_depIdxs,
-		MessageInfos:      file_common_v1_util_proto_msgTypes,
+		GoTypes:           file_apssouza_common_v1_util_proto_goTypes,
+		DependencyIndexes: file_apssouza_common_v1_util_proto_depIdxs,
+		MessageInfos:      file_apssouza_common_v1_util_proto_msgTypes,
 	}.Build()
-	File_common_v1_util_proto = out.File
-	file_common_v1_util_proto_rawDesc = nil
-	file_common_v1_util_proto_goTypes = nil
-	file_common_v1_util_proto_depIdxs = nil
+	File_apssouza_common_v1_util_proto = out.File
+	file_apssouza_common_v1_util_proto_rawDesc = nil
+	file_apssouza_common_v1_util_proto_goTypes = nil
+	file_apssouza_common_v1_util_proto_depIdxs = nil
 }
